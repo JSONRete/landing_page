@@ -1,4 +1,6 @@
-/**
+
+
+First assign my constants/**
  * 
  * Manipulating the DOM exercise.
  * Exercise programmatically builds navigation,
