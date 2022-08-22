@@ -26,7 +26,7 @@
 */
 
 const sections = document.querySelectorAll('.section')
-const nav = document.getElementById('navbar__list');
+const navItems = document.getElementById('navbar__list');
 
 /**
  * End Global Variables
@@ -43,6 +43,19 @@ const nav = document.getElementById('navbar__list');
 */
 
 // build the nav
+
+// const sections = document.querySelectorAll('.section')
+// const navItems = document.getElementById('navbar__list');
+
+sections.forEach(function(section) {
+    const secItem = document.createElement('li');
+    secItem.innerText = section.innerText;
+    secItem.addEventListener('click', function() {
+        navItems.scrollIntoView();
+    });
+    
+    sections.appendChild(secItem);
+});
 
 
 // Add class 'active' to section when near top of viewport
