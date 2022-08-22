@@ -16,6 +16,7 @@
 */
 
 const sections = document.querySelectorAll('.section')
+const nav = document.getElementById('navbar__list');
 
 /**
  * Comments should be present at the beginning of each procedure and class.
