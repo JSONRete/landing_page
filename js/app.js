@@ -26,7 +26,7 @@
 */
 
 const sections = document.querySelectorAll('.section')
-const nav = document.getElementById('navbar__list');
+const navItems = document.getElementById('navbar__list');
 
 /**
  * End Global Variables
@@ -43,6 +43,16 @@ const nav = document.getElementById('navbar__list');
 */
 
 // build the nav
+
+navItems.forEach(function(navItem) {
+    const listItem = document.createElement('li');
+    listItem.innerText = paraElem.innerText;
+    listItem.addEventListener('click', function() {
+        navItem.scrollIntoView();
+    });
+    
+    sections.appendChild(listItem);
+});
 
 
 // Add class 'active' to section when near top of viewport
