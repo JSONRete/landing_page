@@ -25,7 +25,7 @@
  * 
 */
 
-const sections = document.querySelectorAll('.section')
+const sections = document.querySelectorAll('h2')
 const navItems = document.getElementById('navbar__list');
 
 /**
@@ -55,6 +55,7 @@ sections.forEach(function(section) {
     });
     
     sections.appendChild(secItem);
+    console.log('sections')
 });
 
 
