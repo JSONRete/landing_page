@@ -48,8 +48,6 @@ const navItems = document.getElementById('navbar__list');
 // const navItems = document.getElementById('navbar__list');
 
 sections.forEach(function(section) {
-
-    console.log("after", sections.innerHTML);
     const secItem = document.createElement('li');
     secItem.innerText = section.innerText;
     secItem.addEventListener('click', function() {
@@ -58,7 +56,6 @@ sections.forEach(function(section) {
     
     sections.appendChild(secItem);
 });
-// console.log(sections)
 
 // Add class 'active' to section when near top of viewport
 
