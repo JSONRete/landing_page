@@ -44,9 +44,6 @@ const navItems = document.getElementById('navbar__list');
 
 // build the nav
 
-// const sections = document.querySelectorAll('.section')
-// const navItems = document.getElementById('navbar__list');
-
 sections.forEach(function(section) {
     const secItem = document.createElement('li');
     secItem.innerText = section.innerText;
