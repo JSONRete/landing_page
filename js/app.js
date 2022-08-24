@@ -51,10 +51,10 @@ sections.forEach(function(section) {
     const secItem = document.createElement('li');
     secItem.innerText = section.innerText;
     secItem.addEventListener('click', function() {
-        navItems.scrollIntoView();
+        sections.scrollIntoView();
     });
     
-    sections.appendChild(secItem);
+    navItems.appendChild(secItem);
 });
 
 // Add class 'active' to section when near top of viewport
