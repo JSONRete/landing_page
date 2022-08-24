@@ -58,7 +58,6 @@ sections.forEach(function(section) {
     
     sections.appendChild(secItem);
 });
-sections()
 // console.log(sections)
 
 // Add class 'active' to section when near top of viewport
