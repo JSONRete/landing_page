@@ -47,6 +47,7 @@ const navItems = document.getElementById('navbar__list');
 sections.forEach(function(section) {
     const secItem = document.createElement('li');
     secItem.innerText = section.innerText;
+    secItem.classList.add('menu__link');
     secItem.addEventListener('click', function() {
         sections.scrollIntoView();
     });
