@@ -54,6 +54,8 @@ sections.forEach(function(section) {
     navItems.appendChild(secItem);
 });
 
+console.log(sections)
+
 // Add class 'active' to section when near top of viewport
 
 
