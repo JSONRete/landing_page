@@ -1,5 +1,3 @@
-
-
 /**
  * 
  * Manipulating the DOM exercise.
@@ -25,8 +23,6 @@
  * 
 */
 
-const sections = document.querySelectorAll('#data-nav')
-const navItems = document.getElementById('navbar__list');
 
 /**
  * End Global Variables
@@ -44,19 +40,6 @@ const navItems = document.getElementById('navbar__list');
 
 // build the nav
 
-sections.forEach(function(section) {
-    const secItem = document.createElement('li');
-    // const link = document.createElement('a');
-    // const linkText = document.createTextNode('menu-link');
-    // secItem.classList.add(', 'nav-active');
-//    link.setAttribute('href', '#' + section.id);
-    secItem.innerText = section.innerText;
-    secItem.addEventListener('click', function() {
-        sections.scrollIntoView();
-    });
-    navItems.appendChild(secItem);
-    // document.body.appendChild(a);
-});
 
 // Add class 'active' to section when near top of viewport
 
@@ -64,7 +47,7 @@ sections.forEach(function(section) {
 // Scroll to anchor ID using scrollTO event
 
 
-/** 
+/**
  * End Main Functions
  * Begin Events
  * 
