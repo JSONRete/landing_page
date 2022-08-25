@@ -45,19 +45,17 @@ const navItems = document.getElementById('navbar__list');
 // build the nav
 
 sections.forEach(function(section) {
-    const secItem = document.createElement('li', 'data-view');
-    // const linkText = document.createTextNode('a' + 'data-view');
-    // secItem.appendChild('linkText');
+    const secItem = document.createElement('li');
+    const a = document.createElement('a');
+    const linkText = document.createTextNode('menu-link');
     secItem.innerText = section.innerText;
-    secItem.classList.add('menu__link');
+    secItem.classList.add('data-view');
+    a.appendChild(linkText);
     secItem.addEventListener('click', function() {
         sections.scrollIntoView();
     });
-    
     navItems.appendChild(secItem);
 });
-
-console.log(sections)
 
 // Add class 'active' to section when near top of viewport
 
