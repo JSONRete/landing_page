@@ -45,7 +45,9 @@ const navItems = document.getElementById('navbar__list');
 // build the nav
 
 sections.forEach(function(section) {
-    const secItem = document.createElement('li');
+    const secItem = document.createElement('li', 'data-view');
+    // const linkText = document.createTextNode('a' + 'data-view');
+    // secItem.appendChild('linkText');
     secItem.innerText = section.innerText;
     secItem.classList.add('menu__link');
     secItem.addEventListener('click', function() {
