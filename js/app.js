@@ -23,11 +23,7 @@
  * 
 */
 
-const navList = document.getElementsByClassName('navbar__list')
-const sections = document.getElementsByTagName('section')
-console.log(navList)
 
-console.log(sections)
 /**
  * End Global Variables
  * Start Helper Functions
@@ -43,7 +39,6 @@ console.log(sections)
 */
 
 // build the nav
-
 
 
 // Add class 'active' to section when near top of viewport
