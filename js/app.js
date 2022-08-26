@@ -23,6 +23,7 @@
  * 
 */
 
+const navbarList = document.getElementById('navbar__list');
 
 /**
  * End Global Variables
