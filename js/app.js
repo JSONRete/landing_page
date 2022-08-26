@@ -24,6 +24,7 @@
 */
 
 const navbarList = document.getElementById('navbar__list');
+const sections = document.getElementsByTagName('section');
 
 /**
  * End Global Variables
