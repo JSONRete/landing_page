@@ -39,7 +39,7 @@ sections.forEach(function(section) {
 
   li.innerHTML = `<a class='menu__link'>${section.dataset.nav}</a>`;
   li.addEventListener('click', function() {
-    section.scrollIntoView();
+    section.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
   });
   
   navbarList.appendChild(li);
