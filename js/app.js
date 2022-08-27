@@ -24,7 +24,7 @@
 */
 
 const navbarList = document.getElementById('navbar__list');
-const sections = document.getElementsByTagName('section');
+const sections = document.querySelectorAll('section');
 
 /**
  * End Global Variables
@@ -32,7 +32,15 @@ const sections = document.getElementsByTagName('section');
  * 
 */
 
+sections.forEach(function(section) {
+  
+  const li = document.createElement('li');
 
+
+  li.innerHTML = `<a class='menu__link'>${section.dataset.nav}</a>`;
+
+  navbarList.appendChild(li);
+});
 
 /**
  * End Helper Functions
