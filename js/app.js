@@ -72,3 +72,23 @@ sections.forEach(function(section) {
 
 // Set sections as active
 
+const observer = new IntersectionObserver((entries, observer) => {
+  // Each of the sections will make up an “entry”
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          // If target enters the viewport, add an “your-active-class” class to it
+          entry.target.classList.add('your-active-class');
+          // Otherwise, remove the “your-active-class” class
+      } else {
+          entry.target.classList.remove('your-active-class');
+      }
+  });
+});
+// Looping through the sections and adding them as targets of the observer
+// Array.prototype.forEach.call(sections, (el) => {
+//   observer.observe(el)
+// });
+// Scroll to anchor ID using scrollTO event
+//done in createMenuBar function
+  
+  
