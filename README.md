@@ -33,10 +33,5 @@ Ruby
 
 ## Licensing
 
-<<<<<<< HEAD
 This application is licensed under the [MIT License](LICENSE).
 
-gg
-=======
-This application is licensed under the [MIT License](LICENSE).
->>>>>>> 77d275c (readded temp readme)\\\\saf
