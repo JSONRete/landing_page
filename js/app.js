@@ -39,7 +39,7 @@ sections.forEach(function(section) {
 
   li.innerHTML = `<a class='menu__link'>${section.dataset.nav}</a>`;
   li.addEventListener('click', function() {
-    section.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    section.scrollIntoView({behavior: "smooth"});
   });
   
   navbarList.appendChild(li);
@@ -71,3 +71,17 @@ sections.forEach(function(section) {
 // Scroll to section on link click
 
 // Set sections as active
+window.addEventListener('scroll', function() {
+    sections.forEach(function(section) {
+      // check the position
+      const screen = section.getBoundingClientRect();
+      const test = screen.top > 0;
+      
+      // console.log(section.innerText, isInViewport);
+      if (test) {
+        section.classList.add('your-active-class');
+      } else {
+        section.classList.remove('your-active-class');
+      }
+    });
+  })

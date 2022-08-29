@@ -1,14 +1,36 @@
-# landing_page
-# Landing Page Project
+# Two Of U
 
-## Table of Contents
+__Two Of U__ is a Ruby on Rails backed application. __Two Of U__ allows you to get tips for your favorite magic tricks. Create an account by signing up and save your favorite magic tricks allowing other users to share tips for your shared magic tricks.
 
-* [Instructions](#instructions)
+## Installing / Getting started
 
-## Instructions
+Run `bundle install`; this will install gem dependencies from the included `Gemfile` generating the needed `Gemfile.lock` file.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+`bundle install`
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Usage
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+This Ruby on Rails application will function on a local server simulating an online experience. Use the Ruby on Rails Server or your preferred environment to accomplish this.
+[Rails Server](https://guides.rubyonrails.org/getting_started.html)
+
+### Built With
+
+Ruby on Rails, Ruby, Active Record, Html, CSS
+
+### Prerequisites
+
+```ruby
+Ruby
+```
+
+## Version
+
+**0.1.0**
+
+## Contributors
+
+- JaSON Rete
+
+## Licensing
+
+This application is licensed under the [MIT License](LICENSE).
