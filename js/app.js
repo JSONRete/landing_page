@@ -25,7 +25,6 @@ window.addEventListener('scroll', function() {
       const screen = section.getBoundingClientRect();
       const test = screen.top > 0;
       
-      // console.log(section.innerText, isInViewport);
       if (test) {
         section.classList.add('your-active-class');
       } else {
