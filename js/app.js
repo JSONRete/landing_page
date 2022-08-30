@@ -13,11 +13,12 @@ sections.forEach(function(section) {
   navbarList.appendChild(li);
 });
 
+
 window.addEventListener('scroll', function() {
     sections.forEach(function(section) {
 
       const screen = section.getBoundingClientRect();
-      const test = screen.top > 0;
+      const test = screen.top > 33;
       
       if (test) {
         section.classList.add('your-active-class');
