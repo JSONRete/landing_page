@@ -32,6 +32,7 @@ window.addEventListener('scroll', () => {
 
       } else {
         section.classList.remove('your-active-class');
+        document.querySelector(`[data-id=${id}]`).classList.remove('active');
       }
     });
   })
