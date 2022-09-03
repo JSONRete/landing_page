@@ -23,10 +23,12 @@ window.addEventListener('scroll', () => {
     sections.forEach( (section) => {
 
       const inView = section.getBoundingClientRect();
+      const id = section.getAttribute('id');
       const position = inView.top > -5;
       // Set sections as active
       if (position) {
         section.classList.add('your-active-class');
+        document.querySelector(`[data-id=${id}]`).classList.add('active');
 
       } else {
         section.classList.remove('your-active-class');
