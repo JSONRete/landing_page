@@ -7,7 +7,8 @@ const sections = document.querySelectorAll('section');
 sections.forEach( (section) => {
   // builds menu items
   const li = document.createElement('li');
-// creating li element
+  // creating li element
+  li.setAttribute('data-id', section.getAttribute('id'));
   li.innerHTML = `<a class='menu__link'>${section.dataset.nav}</a>`;
   // Scroll to section on link click
   li.addEventListener('click', () => {
@@ -26,8 +27,6 @@ window.addEventListener('scroll', () => {
       // Set sections as active
       if (position) {
         section.classList.add('your-active-class');
-        // document.getElementById(`${section.dataset.nav}`).navbarList.add('active');
-        
 
       } else {
         section.classList.remove('your-active-class');
