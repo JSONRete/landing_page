@@ -28,11 +28,11 @@ window.addEventListener('scroll', () => {
       // Set sections as active
       if (position) {
         section.classList.add('your-active-class');
-        document.querySelector(`[data-id=${id}]`).classList.add('active');
+        navbarList.querySelector(`[data-id=${id}]`).classList.add('navbar-section-active');
 
       } else {
         section.classList.remove('your-active-class');
-        document.querySelector(`[data-id=${id}]`).classList.remove('active');
+        navbarList.querySelector(`[data-id=${id}]`).classList.remove('navbar-section-active');
       }
     });
   })
