@@ -83,7 +83,7 @@ section {
 }
 
 .navbar__menu .menu__link:hover {
-    background: rgba(0,13,60,1) 100%;
+    background: rgba(135,226,2,1) 54%;
     color: #fff;
     transition: ease 0.3s all;
 }
@@ -228,5 +228,5 @@ section.your-active-class .landing__container::after {
 }
 
 .navbar-section-active {
-    background-color: rgba(255, 148, 2, 1) !important;
+    background-color: rgba(255, 148, 2, 1);
 }
