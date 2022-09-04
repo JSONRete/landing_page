@@ -19,6 +19,7 @@ sections.forEach( (section) => {
 window.addEventListener('scroll', () => {
     sections.forEach( (section) => {
 
+      // getBoundingClientRect() method returns a DOMRect object providing information about the size of an element and its position relative to the viewport.
       const inView = section.getBoundingClientRect();
       const id = section.getAttribute('id');
       const position =  inView.y <= 175 && inView.bottom >= 175
