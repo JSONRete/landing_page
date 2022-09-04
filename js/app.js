@@ -1,8 +1,6 @@
 // Global Variables
 const navbarList = document.getElementById('navbar__list');
 const sections = document.querySelectorAll('section');
-
-
 // Builds the nav
 sections.forEach( (section) => {
   // builds menu items
@@ -17,14 +15,15 @@ sections.forEach( (section) => {
   // places built menu on navbar
   navbarList.appendChild(li);
 });
-
 // detects the scroll
 window.addEventListener('scroll', () => {
     sections.forEach( (section) => {
 
       const inView = section.getBoundingClientRect();
       const id = section.getAttribute('id');
-      const position = inView.top > -5;
+      const position =  inView.top <= 150 && inView.bottom >= 150
+
+      // inView.top <= 150 && inView.bottom >= 150
       // Set sections as active
       if (position) {
         section.classList.add('your-active-class');
