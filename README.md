@@ -12,7 +12,7 @@ Launching the index.html into any web browser with the directory of files in the
 
 ## Built With
 
-JavaScript, Html & CSS
+JavaScript, HTML & CSS
 
 ## Version
 
